@@ -9,9 +9,16 @@ Eseguire successivamente `docker-compose up -d`
 Verificare che il database MySQL (utenza radice **root** con password **root**) sia pronto: devono essere stati creati correttamente schema lo **rubrica** e le tabelle persona e utente.
 
 Se si usa DBeaver per la connessione al database, scaricare i driver di MySQL e impostare la proprietà allowPublicKeyRetrieval a true.
+<p align="center">
+<img src="img/dbeaver1.png" alt="DBeaver Configuration" width="200"/>
+<img src="img/dbeaver2.png" alt="DBeaver Configuration" width="200"/>
+<img src="img/dbeaver_connection_ok.png" alt="DBeaver Configuration" width="200"/>
+</p>
+<!-- 
 ![DBeaverConfiguration](img/dbeaver1.png)
 ![DBeaverConfiguration](img/dbeaver2.png)
 ![DBeaverConnectionOK](img/dbeaver_connection_ok.png)
+-->
 
 Assicurarsi di aver settato il driver per la connessione al database da **Project Structure**
 ![Driver](img/driver_connector.png)
@@ -19,16 +26,20 @@ Ho preso il driver di MySQL 9.3.0 dal sito open source, scegliendo la tipologia 
 https://dev.mysql.com/downloads/connector/j/
 
 A questo punto eseguire il main *FinestraPrincipaleConTabella*.
-![DBeaver](img/main_execution.png)
+<img src="img/main_execution.png" alt="Main execution" width="300"/>
+<!-- ![MainExecution](img/main_execution.png) -->
 
 L'applicazione si presenta nel seguente modo:
-![DBeaverConnectionOK](img/login.png)
+<img src="img/login.png" alt="Login" width="300"/>
+<!-- ![Login](img/login.png) -->
 
 Le credenziali di accesso sono: username **admin** e password **1234** (come si evince dallo script di inizializzazione del database **init/schema_database.sql**):
 `INSERT INTO utenti (username, password) VALUES ('admin', '1234');`
 
 In caso di credenziali non fornite o errate e click sul bottone **LOGIN**, si avrà un messaggio di errore:
-![LoginError](img/login_error.png)
+
+<img src="img/login_error.png" alt="Login Error" width="300"/>
+<!-- ![LoginError](img/login_error.png) -->
 
 Una volta effettuato il login con le credenziali corrette viene presentata la finestra principale con una tabella vuota (valorizzata se ci sono dati nel database rubrica.persona)
 ![EmptyList](img/people_empty_list.png)

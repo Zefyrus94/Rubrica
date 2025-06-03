@@ -1,5 +1,5 @@
 # Rubrica
-L'applicazione per il momento è stata testata solo su Windows 11 Pro.
+L'applicazione per il momento è stata testata solo su Windows 11 Pro e con Java 17 e Java 20.
 
 Per avviare il progetto far partire Docker Desktop (assicurandosi che sia aggiornato) se si opera da Windows oppure equivalentemente da Linux/Ubuntu
 `sudo systemctl start docker`

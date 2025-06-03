@@ -15,6 +15,8 @@ Se si usa DBeaver per la connessione al database, scaricare i driver di MySQL e 
 
 Assicurarsi di aver settato il driver per la connessione al database da **Project Structure**
 ![Driver](img/driver_connector.png)
+Ho preso il driver di MySQL 9.3.0 dal sito open source, scegliendo la tipologia **Platform Independent**
+https://dev.mysql.com/downloads/connector/j/
 A questo punto eseguire il main *FinestraPrincipaleConTabella*.
 ![DBeaver](img/main_execution.png)
 

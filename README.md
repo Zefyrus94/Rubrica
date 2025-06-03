@@ -6,7 +6,7 @@ Per avviare il progetto far partire Docker Desktop (assicurandosi che sia aggior
 
 Eseguire successivamente `docker-compose up -d`
 
-Verificare che il database MySQL (utenza radice **root** con password **root**) sia pronto: devono essere stati creati correttamente lo schema **rubrica** e le tabelle persona e utente.
+Verificare che il database MySQL (utenza radice **root** con password **root**) sia pronto: devono essere stati creati correttamente lo schema **rubrica** e le tabelle **persona** e **utente**.
 
 Se si usa DBeaver per la connessione al database, scaricare i driver di MySQL e impostare la proprietà allowPublicKeyRetrieval a true.
 <p align="center">

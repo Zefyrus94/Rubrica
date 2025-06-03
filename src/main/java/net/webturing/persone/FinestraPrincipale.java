@@ -227,5 +227,10 @@ public class FinestraPrincipale extends JFrame {
         });
         //vecchia gestione da file
         this.persone = caricaPersoneDaFile();
+        for(Persona p: this.persone){
+            if (p != null) {
+                tabellaModel.addRow(new Object[]{ p.getNome(), p.getCognome(), p.getTelefono() });
+            }
+        }
     }
 }

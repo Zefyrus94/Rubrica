@@ -5,72 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe143c3-8aeb-41ec-a778-fd0348da4106" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/webturing/authentication/LoginFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/webturing/database/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/webturing/model/Utente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/lib/junit-jupiter-engine-5.13.0-RC1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Autotreno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Chitarra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Coloratore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Comparabile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Coppia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/DesignPatterns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Edificio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Esercizio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/K.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/L.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Musicista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Orario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Ordinatore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Palazzo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/PersonaProva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Pianoforte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Sequenza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Strumento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Studente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Tamburo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/java/PersonaAppApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/CoppiaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/OrarioTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/SequenzaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/StudenteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/main/java/com/example/restservice/Greeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/main/java/com/example/restservice/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/main/java/com/example/springboot/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/test/java/com/example/springboot/HelloControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Aula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Biblioteca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Calciatore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/ComparatorePerEta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/LibroComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/PersonaComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Rubrica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Studente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../prove/prove/src/test/java/com/example/prove/PersonaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/components/forceGraph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/components/forceGraph.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/components/forceGraphGenerator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/data/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/test/src/main/java/com/example/test/scrap/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/test/src/test2/PersonaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informazioni.txt" beforeDir="false" afterPath="$PROJECT_DIR$/informazioni.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipaleConTabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/FinestraPrincipaleConTabella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,33 +26,40 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2xzsLtBJ6PrFPsMBEayBXQFMg0L" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/giacomo.bonanni.INTRADEAS/Downloads/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/giaco/Downloads/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.FinestraPrincipaleTest (1)">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.webturing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FinestraPrincipaleConTabella">
     <configuration name="FinestraPrincipaleConTabella" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.webturing.persone.FinestraPrincipaleConTabella" />
+      <option name="MAIN_CLASS_NAME" value="net.webturing.FinestraPrincipaleConTabella" />
       <module name="Rubrica" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.util=ALL-UNNAMED " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="net.webturing.authentication.*" />
@@ -177,8 +125,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FinestraPrincipaleTest (1)" />
         <item itemvalue="Application.FinestraPrincipaleConTabella" />
+        <item itemvalue="JUnit.FinestraPrincipaleTest (1)" />
         <item itemvalue="JUnit.FinestraPrincipaleTest" />
         <item itemvalue="JUnit.FinestraPrincipaleTest" />
       </list>

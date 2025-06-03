@@ -1,4 +1,4 @@
-package net.webturing.persone;
+package net.webturing;
 
 import net.webturing.authentication.LoginFrame;
 

@@ -47,6 +47,7 @@ Una volta effettuato il login con le credenziali corrette viene presentata la fi
 ![EmptyList](img/people_empty_list.png)
 Cliccando su nuovo viene presentata la finestra di creazione
 ![CreateNewPerson](img/people_create_new.png)
+
 Al momento solo il campo età è un numero intero obbligatorio, gli altri possono essere vuoti. Sul database viene staccato un bigint progressivo per ogni nuovo utente creato (unicità sulla chiave primaria id).
 Il pulsante modifica presenta la stessa schermata precedente, con i campi valorizzati della persona la cui riga è stata selezionata.
 

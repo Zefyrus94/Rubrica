@@ -17,11 +17,13 @@ Assicurarsi di aver settato il driver per la connessione al database da **Projec
 ![Driver](img/driver_connector.png)
 Ho preso il driver di MySQL 9.3.0 dal sito open source, scegliendo la tipologia **Platform Independent**
 https://dev.mysql.com/downloads/connector/j/
+
 A questo punto eseguire il main *FinestraPrincipaleConTabella*.
 ![DBeaver](img/main_execution.png)
 
 L'applicazione si presenta nel seguente modo:
 ![DBeaverConnectionOK](img/login.png)
+
 Le credenziali di accesso sono: username **admin** e password **1234** (come si evince dallo script di inizializzazione del database **init/schema_database.sql**):
 `INSERT INTO utenti (username, password) VALUES ('admin', '1234');`
 

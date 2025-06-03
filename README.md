@@ -26,6 +26,7 @@ Ho preso il driver di MySQL 9.3.0 dal sito open source, scegliendo la tipologia 
 https://dev.mysql.com/downloads/connector/j/
 
 A questo punto eseguire il main *FinestraPrincipaleConTabella*.
+
 <img src="img/main_execution.png" alt="Main execution" width="300"/>
 <!-- ![MainExecution](img/main_execution.png) -->
 

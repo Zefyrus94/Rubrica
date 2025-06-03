@@ -89,7 +89,7 @@ class EditorPersona extends JFrame {
                     mainFrame.aggiornaPersona(personaIndex, nuovaPersona);
                 }
                 // Dopo inserimento o modifica
-                mainFrame.salvaPersoneSuFile(); // ← aggiunta
+                mainFrame.salvaPersoneSuFile();
                 dispose();
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this, "Età deve essere un numero intero.", "Errore", JOptionPane.ERROR_MESSAGE);

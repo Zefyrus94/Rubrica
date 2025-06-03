@@ -26,7 +26,7 @@ public class DatabaseManager {
                 ResultSet rs = stmt.getGeneratedKeys();
                 if (rs.next()) {
                     long id = rs.getLong(1);
-                    p.setId(id); // ← imposta l'ID sulla persona appena salvata
+                    p.setId(id);
                 }
         } catch (SQLException e) {
             e.printStackTrace();

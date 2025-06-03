@@ -55,7 +55,11 @@ public class FinestraPrincipale extends JFrame {
 
         return persone;
     }
+    public void aggiungiPersona(Persona p) {
+        tabellaModel.addRow(new Object[]{ p.getNome(), p.getCognome(), p.getTelefono() });
+        persone.add(p);
 
+    }
     public void salvaPersonaSuFile(Persona p) {
         File dir = new File("informazioni");
         if (!dir.exists()) dir.mkdirs();
@@ -105,7 +109,7 @@ public class FinestraPrincipale extends JFrame {
         File dir = new File("informazioni");
         if (!dir.exists()) return;
 
-        File[] files = dir.listFiles((d, name) -> name.matches(".*_" + id + "\\.txt$"));
+        File[] files = dir.listFiles((d, name) -> name.matches(".*-" + id + "\\.txt$"));
         if (files != null) {
             for (File f : files) {
                 f.delete();

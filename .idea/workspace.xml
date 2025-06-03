@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe143c3-8aeb-41ec-a778-fd0348da4106" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/persone/EditorPersona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/persone/EditorPersona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,8 +143,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipale.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
+          <line>108</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

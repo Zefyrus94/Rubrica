@@ -19,7 +19,7 @@ public class Persona {
         this.eta = eta;
     }
     //caricamento/lettura da db
-    public Persona(long id, String nome, String cognome, String indirizzo, String telefono, int eta) {
+    public Persona(Long id, String nome, String cognome, String indirizzo, String telefono, int eta) {
         this.id = id;
         this.nome = nome;
         this.cognome = cognome;
@@ -47,8 +47,8 @@ public class Persona {
     public int getEta() {
         return eta;
     }
-    public void setId(long id) { this.id = id; }
-    public long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public Long getId() { return id; }
     public void setNome(String nome) {
         this.nome = nome;
     }

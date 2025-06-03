@@ -80,7 +80,7 @@ class EditorPersona extends JFrame {
                 Persona nuovaPersona = new Persona(nome, cognome, indirizzo, telefono, eta);
 
                 if (personaIndex == -1) {
-                    mainFrame.aggiungiPersona(nuovaPersona);
+                    mainFrame.salvaPersonaSuFile(nuovaPersona);
                 } else {
                     //rivedi
                     if (personaDaModificare != null) {
@@ -89,7 +89,6 @@ class EditorPersona extends JFrame {
                     mainFrame.aggiornaPersona(personaIndex, nuovaPersona);
                 }
                 // Dopo inserimento o modifica
-                mainFrame.salvaPersoneSuFile(); // ← aggiunta
                 dispose();
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this, "Età deve essere un numero intero.", "Errore", JOptionPane.ERROR_MESSAGE);

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fe143c3-8aeb-41ec-a778-fd0348da4106" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/informazioni.txt" beforeDir="false" afterPath="$PROJECT_DIR$/informazioni.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipaleConTabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/FinestraPrincipaleConTabella.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/database/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/database/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/persone/EditorPersona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/persone/EditorPersona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "persistence__files",
     "last_opened_file_path": "C:/Users/giaco/Downloads/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -142,5 +140,16 @@
       <updated>1748952190704</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/webturing/persone/FinestraPrincipale.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

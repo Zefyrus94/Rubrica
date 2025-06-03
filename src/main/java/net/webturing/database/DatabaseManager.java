@@ -25,15 +25,15 @@ public class DatabaseManager {
                 // 🔑 Recupera l'ID generato
                 ResultSet rs = stmt.getGeneratedKeys();
                 if (rs.next()) {
-                    long id = rs.getLong(1);
-                    p.setId(id); // ← imposta l'ID sulla persona appena salvata
+                    Long id = rs.getLong(1);
+                    p.setId(id);
                 }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public void aggiornaPersona(Persona p, long id) {
+    public void aggiornaPersona(Persona p, Long id) {
         String sql = "UPDATE persona SET nome=?, cognome=?, indirizzo=?, telefono=?, eta=? WHERE id=?";
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -49,7 +49,7 @@ public class DatabaseManager {
         }
     }
 
-    public void eliminaPersona(long id) {
+    public void eliminaPersona(Long id) {
         String sql = "DELETE FROM persona WHERE id=?";
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -74,7 +74,7 @@ public class DatabaseManager {
                         rs.getString("telefono"),
                         rs.getInt("eta")
                 );
-                p.setId(rs.getInt("id")); // aggiungi campo ID nella classe Persona
+                p.setId(rs.getLong("id")); // aggiungi campo ID nella classe Persona
                 lista.add(p);
             }
         } catch (SQLException e) {

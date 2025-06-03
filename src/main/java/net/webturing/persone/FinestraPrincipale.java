@@ -18,45 +18,101 @@ public class FinestraPrincipale extends JFrame {
     private JTable tabella;
     private DefaultTableModel tabellaModel;
     private List<Persona> persone;
-    private DatabaseManager db = new DatabaseManager();
-
     private final File filePersone;
+    public List<Persona> caricaPersoneDaFile() {
+        List<Persona> persone = new ArrayList<>();
+        File dir = new File("informazioni");
+        if (!dir.exists()) return persone;
 
-    private void caricaPersoneDaDatabase(){
-        persone = db.caricaPersone();
-        for(Persona p: persone){
-            if (p != null) {
-                tabellaModel.addRow(new Object[]{ p.getNome(), p.getCognome(), p.getTelefono() });
-            }
-        }
+        File[] files = dir.listFiles((d, name) -> name.endsWith(".txt"));
+        if (files == null) return persone;
 
-    }
-    private void caricaPersoneDaFile() {
-        if (!filePersone.exists()) return;
+        for (File file : files) {
+            try (Scanner sc = new Scanner(file)) {
+                if (sc.hasNextLine()) {
+                    String linea = sc.nextLine();
+                    String[] campi = linea.split(";");
+                    if (campi.length == 5) {
+                        String nome = campi[0];
+                        String cognome = campi[1];
+                        String indirizzo = campi[2];
+                        String telefono = campi[3];
+                        int eta = Integer.parseInt(campi[4]);
 
-        try (Scanner scanner = new Scanner(filePersone)) {
-            while (scanner.hasNextLine()) {
-                String riga = scanner.nextLine();
-                Persona p = Persona.fromString(riga);
-                if (p != null) {
-                    persone.add(p);
-                    tabellaModel.addRow(new Object[]{ p.getNome(), p.getCognome(), p.getTelefono() });
+                        // Estrai ID dal nome file (ultima parte dopo il secondo '-')
+                        String baseName = file.getName().replace(".txt", "");
+                        String[] parts = baseName.split("-");
+                        Long id = parts.length >= 3 ? Long.parseLong(parts[2]) : null;
+
+                        Persona p = new Persona(id, nome, cognome, indirizzo, telefono, eta);
+                        persone.add(p);
+                    }
                 }
+            } catch (Exception e) {
+                e.printStackTrace(); // ignora file corrotti o malformati
             }
+        }
+
+        return persone;
+    }
+
+    public void salvaPersonaSuFile(Persona p) {
+        File dir = new File("informazioni");
+        if (!dir.exists()) dir.mkdirs();
+
+        // Genera nome file sicuro
+        Long id = (p.getId() != null) ? p.getId() : System.currentTimeMillis();
+
+        String fileName = String.format("%s-%s-%d.txt",
+                p.getNome().replaceAll("\\s+", "_"),
+                p.getCognome().replaceAll("\\s+", "_"),
+                id
+        );
+
+        File outFile = new File(dir, fileName);
+
+        try (PrintStream out = new PrintStream(outFile)) {
+            String linea = String.join(";",
+                    p.getNome(),
+                    p.getCognome(),
+                    p.getIndirizzo(),
+                    p.getTelefono(),
+                    String.valueOf(p.getEta())
+            );
+            out.println(linea);
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Errore nella lettura del file.", "Errore", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+        }
+    }
+    public void aggiornaPersona(int index, Persona nuovaPersona) {
+        Long id = persone.get(index).getId();
+        nuovaPersona.setId(id); // Mantieni l'id esistente
+
+        persone.set(index, nuovaPersona);
+
+        eliminaFilePersona(id);              // elimina file vecchio
+        salvaPersonaSuFile(nuovaPersona);    // salva file aggiornato
+    }
+
+    //tofix
+    public void eliminaPersona(int index) {
+        Persona p = persone.get(index);
+        persone.remove(index);
+        eliminaFilePersona(p.getId()); // rimuove il file associato
+    }
+
+    public void eliminaFilePersona(Long id) {
+        File dir = new File("informazioni");
+        if (!dir.exists()) return;
+
+        File[] files = dir.listFiles((d, name) -> name.matches(".*_" + id + "\\.txt$"));
+        if (files != null) {
+            for (File f : files) {
+                f.delete();
+            }
         }
     }
 
-    public void salvaPersoneSuFile() {
-        try (PrintStream out = new PrintStream(filePersone)) {
-            for (Persona p : persone) {
-                out.println(p.toFileString());
-            }
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Errore nel salvataggio del file.", "Errore", JOptionPane.ERROR_MESSAGE);
-        }
-    }
     public FinestraPrincipale(File filePersone) {
         super("Gestione Persone");
         this.filePersone = filePersone;
@@ -72,25 +128,11 @@ public class FinestraPrincipale extends JFrame {
         tabella.setName("tabellaPersone");
         JScrollPane scrollPane = new JScrollPane(tabella);
         add(scrollPane, BorderLayout.CENTER);
-
-        //vecchia gestione bottoni
-        /*JButton nuovoButton = new JButton("Nuovo");
-        nuovoButton.setName("nuovoButton");
-        JButton modificaButton = new JButton("Modifica");
-        modificaButton.setName("modificaButton");
-        JButton eliminaButton = new JButton("Elimina");
-        eliminaButton.setName("eliminaButton");
-
-        JPanel btnPanel = new JPanel();
-        btnPanel.add(nuovoButton);
-        btnPanel.add(modificaButton);
-        btnPanel.add(eliminaButton);
-        add(btnPanel, BorderLayout.SOUTH);*/
         //nuova gestione bottoni
         JToolBar toolBar = new JToolBar();
         toolBar.setFloatable(false); // impedisce di spostare la toolbar
 
-// Bottoni con testo e/o icone
+        // Bottoni con testo e/o icone
         JButton nuovoButton = new JButton("Nuovo");
         nuovoButton.setName("nuovoButton");
 
@@ -101,13 +143,10 @@ public class FinestraPrincipale extends JFrame {
         eliminaButton.setName("eliminaButton");
         //dim btn
         Dimension btnSize = new Dimension(300, 40); // larghezza, altezza
-
         nuovoButton.setPreferredSize(btnSize);
         modificaButton.setPreferredSize(btnSize);
         eliminaButton.setPreferredSize(btnSize);
         //fine dim btn
-// Se hai immagini, puoi fare così:
-        //nuovoButton.setIcon(new ImageIcon(getClass().getResource("/icons/nuovo.png")));
         ImageIcon rawIcon = new ImageIcon(getClass().getResource("/icons/nuovo.png"));
         Image scaled = rawIcon.getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH);
         nuovoButton.setIcon(new ImageIcon(scaled));
@@ -122,12 +161,12 @@ public class FinestraPrincipale extends JFrame {
         scaled = rawIcon.getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH);
         eliminaButton.setIcon(new ImageIcon(scaled));
 
-// Aggiungi bottoni alla toolbar
+        // Aggiungi bottoni alla toolbar
         toolBar.add(nuovoButton);
         toolBar.add(modificaButton);
         toolBar.add(eliminaButton);
 
-// Aggiungi la toolbar in alto
+        // Aggiungi la toolbar in alto
         add(toolBar, BorderLayout.NORTH);
 
         //fine nuova gestione
@@ -180,43 +219,13 @@ public class FinestraPrincipale extends JFrame {
 
             if (conferma == JOptionPane.YES_OPTION) {
                 //vecchia gestione da file
-                /*
-
-                salvaPersoneSuFile();                     // Salva aggiornato su file*/
                 Long id = p.getId();
-                db.eliminaPersona(id);
-                //persone = db.caricaPersone();
-                persone.remove(selectedRow);              // Rimuove dalla lista
+                //tofix cancellazione
+                eliminaPersona(selectedRow);
                 tabellaModel.removeRow(selectedRow);      // Rimuove dalla tabella
             }
         });
-
         //vecchia gestione da file
-        //caricaPersoneDaFile();
-        caricaPersoneDaDatabase();
-    }
-
-    public void aggiungiPersona(Persona p) {
-
-
-        db.aggiungiPersona(p);
-        //persone = db.caricaPersone(); // ricarica dal DB
-        tabellaModel.addRow(new Object[]{ p.getNome(), p.getCognome(), p.getTelefono() });
-        persone.add(p);
-
-    }
-
-    public void aggiornaPersona(int index, Persona aggiornata) {
-
-
-        Long id = aggiornata.getId();
-        db.aggiornaPersona(aggiornata, id);
-        /*persone = db.caricaPersone();*/
-        persone.set(index, aggiornata);
-
-        tabellaModel.setValueAt(aggiornata.getNome(), index, 0);
-        tabellaModel.setValueAt(aggiornata.getCognome(), index, 1);
-        tabellaModel.setValueAt(aggiornata.getTelefono(), index, 2);
-
+        this.persone = caricaPersoneDaFile();
     }
 }

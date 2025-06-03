@@ -31,6 +31,7 @@ A questo punto eseguire il main *FinestraPrincipaleConTabella*.
 <!-- ![MainExecution](img/main_execution.png) -->
 
 L'applicazione si presenta nel seguente modo:
+
 <img src="img/login.png" alt="Login" width="300"/>
 <!-- ![Login](img/login.png) -->
 

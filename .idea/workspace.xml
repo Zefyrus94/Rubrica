@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2fe143c3-8aeb-41ec-a778-fd0348da4106" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/webturing/authentication/LoginFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/webturing/database/DatabaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/webturing/model/Utente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/lib/junit-jupiter-engine-5.13.0-RC1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Autotreno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Chitarra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Coloratore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Comparabile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Coppia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/DesignPatterns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Edificio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Esercizio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/K.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/L.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Musicista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Orario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Ordinatore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Palazzo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/PersonaProva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Pianoforte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Sequenza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Strumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Studente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/Tamburo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/java/PersonaAppApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/CoppiaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/OrarioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/SequenzaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/Test/src/test/StudenteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/main/java/com/example/restservice/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/main/java/com/example/restservice/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/main/java/com/example/springboot/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo (1)/demo/src/test/java/com/example/springboot/HelloControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../diadia-base-2025/diadia/src/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Aula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Biblioteca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Calciatore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/ComparatorePerEta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/LibroComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/PersonaComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Rubrica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/main/java/com/example/prove/Studente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prove/prove/src/test/java/com/example/prove/PersonaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/components/forceGraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/components/forceGraph.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/components/forceGraphGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/data/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test/src/main/java/com/example/test/scrap/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test/src/test2/PersonaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2xzsLtBJ6PrFPsMBEayBXQFMg0L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/giacomo.bonanni.INTRADEAS/Downloads/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.FinestraPrincipaleTest (1)">
+    <configuration name="FinestraPrincipaleConTabella" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.webturing.persone.FinestraPrincipaleConTabella" />
+      <module name="Rubrica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.webturing.authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinestraPrincipaleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rubrica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.webturing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.webturing" />
+      <option name="MAIN_CLASS_NAME" value="net.webturing.FinestraPrincipaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinestraPrincipaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rubrica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.webturing.authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.webturing" />
+      <option name="MAIN_CLASS_NAME" value="net.webturing.FinestraPrincipaleTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea --add-opens java.base/java.util=ALL-UNNAMED " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinestraPrincipaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rubrica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.webturing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.webturing" />
+      <option name="MAIN_CLASS_NAME" value="net.webturing.FinestraPrincipaleTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.FinestraPrincipaleConTabella" />
+      <item itemvalue="JUnit.FinestraPrincipaleTest (1)" />
+      <item itemvalue="JUnit.FinestraPrincipaleTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FinestraPrincipaleTest (1)" />
+        <item itemvalue="Application.FinestraPrincipaleConTabella" />
+        <item itemvalue="JUnit.FinestraPrincipaleTest" />
+        <item itemvalue="JUnit.FinestraPrincipaleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fe143c3-8aeb-41ec-a778-fd0348da4106" name="Changes" comment="" />
+      <created>1748952190704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748952190704</updated>
+    </task>
+    <servers />
+  </component>
+</project>

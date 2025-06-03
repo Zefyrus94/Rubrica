@@ -87,6 +87,7 @@ public class FinestraPrincipale extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
     public void aggiornaPersona(int index, Persona nuovaPersona) {
         Long id = persone.get(index).getId();
@@ -96,6 +97,11 @@ public class FinestraPrincipale extends JFrame {
 
         eliminaFilePersona(id);              // elimina file vecchio
         salvaPersonaSuFile(nuovaPersona);    // salva file aggiornato
+        persone.set(index, nuovaPersona);
+
+        tabellaModel.setValueAt(nuovaPersona.getNome(), index, 0);
+        tabellaModel.setValueAt(nuovaPersona.getCognome(), index, 1);
+        tabellaModel.setValueAt(nuovaPersona.getTelefono(), index, 2);
     }
 
     //tofix

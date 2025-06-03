@@ -81,6 +81,7 @@ class EditorPersona extends JFrame {
 
                 if (personaIndex == -1) {
                     mainFrame.salvaPersonaSuFile(nuovaPersona);
+                    mainFrame.aggiungiPersona(nuovaPersona);
                 } else {
                     //rivedi
                     if (personaDaModificare != null) {
@@ -88,7 +89,7 @@ class EditorPersona extends JFrame {
                     }
                     mainFrame.aggiornaPersona(personaIndex, nuovaPersona);
                 }
-                mainFrame.aggiungiPersona(nuovaPersona);
+
                 // Dopo inserimento o modifica
 
                 dispose();
